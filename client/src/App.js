@@ -17,7 +17,7 @@ import { Cart } from './components/Cart';
 function App() {
   const [products, setproducts] = useState([])
   useEffect(()=>{
-    axios.get('http://localhost:3001/get-products').then(response=>{
+    axios.get('https://ecommerce-hrip.onrender.com/get-products').then(response=>{
       setproducts(response.data)
     })
   },[])

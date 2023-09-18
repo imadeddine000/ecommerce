@@ -16,7 +16,7 @@ export const BUY = ({buyingPage,setbuyingPage,id,price}) => {
         price:0,
     })
     const handleBuy=()=>{
-        axios.post('http://localhost:3001/add-command',BuyerInfo).then(response=>{
+        axios.post('https://ecommerce-hrip.onrender.com/add-command',BuyerInfo).then(response=>{
             alert(response.data.message)
         })
     }

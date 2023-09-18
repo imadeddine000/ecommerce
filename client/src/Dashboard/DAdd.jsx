@@ -16,8 +16,8 @@ const DAdd = () => {
   const handleSubmitImage=async ()=>{
       let formData=new FormData()
       formData.append('file',Image.data)
-      axios.post('http://localhost:3001/images',formData,{product}).then(response=>{
-        setproduct({...product,image:'http://localhost:3001/'+response.data.path});
+      axios.post('https://ecommerce-hrip.onrender.com/images',formData,{product}).then(response=>{
+        setproduct({...product,image:'https://ecommerce-hrip.onrender.com/'+response.data.path});
         alert(response.data.message)
       })   
   }

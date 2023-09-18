@@ -9,7 +9,7 @@ import { BiTrash } from 'react-icons/bi'
 const Dhome = () => {
   const {products,setproducts}=useContext(productsContexte)
   const handleDeleteProduct=(id,img)=>{
-    axios.post('http://localhost:3001/delete',{id,img})
+    axios.post('https://ecommerce-hrip.onrender.com/delete',{id,img})
     setTimeout(()=>{
       window.location.href='/dashboard'
     },700)

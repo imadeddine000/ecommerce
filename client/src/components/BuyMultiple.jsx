@@ -14,7 +14,7 @@ export const BuyMultiple = ({isopened,setisopened,id}) => {
         pid:productid,
     })
     const handleBuy=()=>{
-        axios.post('http://localhost:3001/add-command',BuyerInfo).then(response=>{
+        axios.post('https://ecommerce-hrip.onrender.com/add-command',BuyerInfo).then(response=>{
             alert(response.data.message)
         })
     }

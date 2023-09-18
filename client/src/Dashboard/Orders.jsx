@@ -8,7 +8,7 @@ export const Orders = () => {
   const [commands, setcommands] = useState([])
   const [isOpened, setisOpened] = useState(false)
   useEffect(()=>{
-    axios.get('http://localhost:3001/get-commands').then(response=>{
+    axios.get('https://ecommerce-hrip.onrender.com/get-commands').then(response=>{
       console.log(response.data)
       setcommands(response.data)
     })
