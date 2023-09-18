@@ -98,5 +98,6 @@ app.get('*', (req, res) => {
 });
 
 app.listen(3001||process.env.PORT,()=>{
+  console.log(__dirname)
     console.log('listening on port 3001')
 })
