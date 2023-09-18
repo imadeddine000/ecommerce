@@ -90,12 +90,7 @@ app.get('/get-commands',async (req,res)=>{
 
 })
 
-app.use(express.static(path.join(__dirname, '../client/build')));
 
-app.get('*', (req, res) => {
-  console.log(__dirname)
-  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-});
 
 app.listen(3001||process.env.PORT,()=>{
  
